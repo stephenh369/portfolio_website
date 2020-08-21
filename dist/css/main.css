@@ -6,3 +6,41 @@
 body {
   background-color: #333;
   color: #f4f4f4; }
+
+.text {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem; }
+  .text .typing {
+    color: steelblue; }
+
+.cursor {
+  position: relative; }
+  .cursor:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    border-right: 2px solid #666;
+    animation: blink 0.5s infinite ease-in-out; }
+
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0.25; }
+  50% {
+    opacity: 0.5; }
+  75% {
+    opacity: 0.75; }
+  100% {
+    opacity: 1; } }
+
+.solidCursor {
+  position: relative; }
+  .solidCursor:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    border-right: 2px solid #666; }

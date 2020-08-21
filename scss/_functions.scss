@@ -7,3 +7,9 @@
     @return $light-color;
   }
 }
+
+@mixin keyframes($animationName) {
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
