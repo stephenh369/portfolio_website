@@ -22,6 +22,7 @@ body {
   transform: translateY(-50%);
   right: 0;
   height: 100%;
+  width: 10vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,6 +30,7 @@ body {
   ul {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   li {
     padding: 1rem 1.5rem;
@@ -42,6 +44,7 @@ body {
     transition: border-color 0.25s;
     &:hover {
       border-color: $secondary-color;
+      font-weight: 700;
     }
   }
 }
