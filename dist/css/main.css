@@ -8,6 +8,10 @@ body {
   background-color: #333;
   color: #f4f4f4; }
 
+#about {
+  margin: auto;
+  width: 50vw; }
+
 .text {
   display: flex;
   justify-content: center;
