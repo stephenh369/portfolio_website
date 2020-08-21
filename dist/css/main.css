@@ -33,6 +33,23 @@ body {
     #main-nav a:hover {
       border-color: steelblue; }
 
+#showcase {
+  margin: 35vh auto;
+  width: 75%;
+  transform: translateY(-25%); }
+  #showcase .text {
+    margin: 5vh auto; }
+  #showcase h3 {
+    text-align: center; }
+  #showcase-gif-div {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    height: 35vh; }
+  #showcase .btn-div {
+    display: flex;
+    justify-content: center; }
+
 #about {
   margin: auto;
   width: 50vw; }

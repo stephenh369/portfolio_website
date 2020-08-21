@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="index">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
   <header id="main-header">
     <nav id="main-nav">
       <ul>
-        <li><a href="#main-header">Home</a></li>
+        <li><a href="#index">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -28,11 +28,11 @@
       </div>
       <script src="./typewriter.js"></script>
       <h3>I am a software developer, I make computer go beep bop boop.</h3>
-      <iframe src="https://giphy.com/embed/ule4vhcY1xEKQ" 
-      width="480" height="280" frameBorder="0" class="giphy-embed" allowFullScreen>
-      </iframe>
+      <div id="showcase-gif-div">
+        <iframe src="https://giphy.com/embed/ule4vhcY1xEKQ" width="350px" height="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+      </div>
       <div class="btn-div">
-        <button class="btn">View My Projects</button>
+        <a href="#projects" class="btn">View My Projects</a>
       </div>
     </section>
   </header>

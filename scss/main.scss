@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'functions';
 
+// GLOBAL
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +14,7 @@ body {
   color: set-text-color($dark-color);
 }
 
+// NAV/ASIDE BAR
 #main-nav {
   background: cadetblue;
   position: fixed;
@@ -43,6 +45,32 @@ body {
     }
   }
 }
+
+// SHOWCASE SECTION
+#showcase {
+  margin: 35vh auto;
+  width: 75%;
+  transform: translateY(-25%);
+  .text {
+    margin: 5vh auto;
+  }
+  h3 {
+    text-align: center;
+  }
+  &-gif-div {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    height: 35vh;
+  }
+  .btn-div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+// ABOUT SECTION
 #about {
   margin: auto;
   width: 50vw;
