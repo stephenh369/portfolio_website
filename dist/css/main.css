@@ -8,6 +8,31 @@ body {
   background-color: #333;
   color: #f4f4f4; }
 
+#main-nav {
+  background: cadetblue;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  #main-nav ul {
+    display: flex;
+    flex-direction: column; }
+  #main-nav li {
+    padding: 1rem 1.5rem;
+    list-style: none; }
+  #main-nav a {
+    text-decoration: none;
+    color: #f4f4f4;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.25s; }
+    #main-nav a:hover {
+      border-color: steelblue; }
+
 #about {
   margin: auto;
   width: 50vw; }
