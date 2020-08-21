@@ -5,7 +5,7 @@
   font-family: Arial, Helvetica, sans-serif; }
 
 body {
-  background-color: #333;
+  background-color: #3a4b55;
   color: #f4f4f4; }
 
 #main-nav {
@@ -23,6 +23,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    #main-nav ul i {
+      margin-bottom: 1rem;
+      font-size: 1.75rem; }
   #main-nav li {
     padding: 1rem 1.5rem;
     list-style: none; }
@@ -33,7 +36,7 @@ body {
     padding-bottom: 0.5rem;
     transition: border-color 0.25s; }
     #main-nav a:hover {
-      border-color: steelblue;
+      border-color: rgba(64, 117, 160, 0.9);
       font-weight: 700; }
 
 #showcase {
@@ -78,7 +81,7 @@ body {
   justify-content: center;
   font-size: 1.4rem; }
   .text .typing {
-    color: steelblue; }
+    color: rgba(64, 117, 160, 0.9); }
 
 .cursor {
   position: relative; }
@@ -87,7 +90,7 @@ body {
     position: absolute;
     width: 1px;
     height: 100%;
-    border-right: 2px solid #666;
+    border-right: 2px solid steelblue;
     animation: blink 0.5s infinite ease-in-out; }
 
 @keyframes blink {
@@ -109,4 +112,4 @@ body {
     position: absolute;
     width: 1px;
     height: 100%;
-    border-right: 2px solid #666; }
+    border-right: 2px solid steelblue; }
