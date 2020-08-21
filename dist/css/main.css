@@ -54,6 +54,22 @@ body {
   margin: auto;
   width: 50vw; }
 
+.btn-showcase {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.25s;
+  border-radius: 7px;
+  cursor: pointer;
+  text-decoration: none; }
+
+.btn-showcase {
+  margin-top: 1rem;
+  background-color: steelblue;
+  color: #f4f4f4; }
+  .btn-showcase:hover {
+    padding: 1.5rem 2.5rem;
+    opacity: 0.75; }
+
 .text {
   display: flex;
   justify-content: center;
