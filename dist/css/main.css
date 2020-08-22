@@ -87,6 +87,30 @@ h1, h2, h3, h4, h5, h6, .typing {
       margin-left: 0.25rem;
       content: ' '; }
 
+#projects h3 {
+  width: fit-content;
+  justify-self: center;
+  align-self: center;
+  border-bottom: 3px solid steelblue; }
+
+#projects-header {
+  background-color: rgba(51, 51, 51, 0.6);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 35vh auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 65vw;
+  max-width: 1200px; }
+
+#projects img {
+  width: 100%;
+  height: 100%;
+  min-width: 250px;
+  max-width: 400px;
+  max-height: 250px;
+  padding: 1rem; }
+
 .btn-showcase {
   display: inline-block;
   padding: 0.8rem 2rem;
