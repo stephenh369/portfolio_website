@@ -90,12 +90,6 @@ h1, h2, h3, h4, h5, h6, .typing {
       margin-left: 0.25rem;
       content: ' '; }
 
-#projects h3 {
-  width: fit-content;
-  justify-self: center;
-  align-self: center;
-  border-bottom: 3px solid steelblue; }
-
 #projects-header {
   background-color: rgba(51, 51, 51, 0.6);
   display: grid;
@@ -105,6 +99,15 @@ h1, h2, h3, h4, h5, h6, .typing {
   border-radius: 1rem;
   width: 65vw;
   max-width: 1200px; }
+  #projects-header h3 {
+    width: fit-content;
+    justify-self: center;
+    align-self: center;
+    border-bottom: 3px solid steelblue; }
+  #projects-header h3::after {
+    font-family: "Font Awesome 5 Free";
+    margin-left: 0.25rem;
+    content: ' '; }
 
 #projects img {
   width: 100%;
@@ -114,7 +117,7 @@ h1, h2, h3, h4, h5, h6, .typing {
   max-height: 250px;
   padding: 1rem; }
 
-.btn-showcase {
+.btn-showcase, .btn-primary {
   display: inline-block;
   padding: 0.8rem 2rem;
   transition: all 0.25s;
@@ -128,6 +131,13 @@ h1, h2, h3, h4, h5, h6, .typing {
   color: #f4f4f4; }
   .btn-showcase:hover {
     padding: 1.5rem 2.5rem;
+    opacity: 0.75; }
+
+.btn-primary {
+  margin-top: 1rem;
+  background-color: steelblue;
+  color: #f4f4f4; }
+  .btn-primary:hover {
     opacity: 0.75; }
 
 .text {

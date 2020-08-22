@@ -122,13 +122,6 @@ h1, h2, h3, h4, h5, h6, .typing {
 
 //PROJECTS SECTION
 #projects {
-  h3 {
-    width: fit-content;
-    justify-self: center;
-    align-self: center;
-    border-bottom: 3px solid $primary-color;
-
-  }
   &-header {
     background-color: $dark-shade-see-through;
     display: grid;
@@ -138,6 +131,17 @@ h1, h2, h3, h4, h5, h6, .typing {
     border-radius: 1rem;
     width: 65vw;
     max-width: 1200px;
+    h3 {
+      width: fit-content;
+      justify-self: center;
+      align-self: center;
+      border-bottom: 3px solid $primary-color;
+    }
+    h3::after {
+      font-family: "Font Awesome 5 Free";
+      margin-left: 0.25rem;
+      content: ' ';
+    }
   }
   img {
     width: 100%;
@@ -167,6 +171,15 @@ h1, h2, h3, h4, h5, h6, .typing {
     color: set-text-color($primary-color);
     &:hover {
       padding: 1.5rem 2.5rem;
+      opacity: 0.75;
+    }
+  }
+  &-primary {
+    @extend %btn-shared;
+    margin-top: 1rem;
+    background-color: $primary-color;
+    color: set-text-color($primary-color);
+    &:hover {
       opacity: 0.75;
     }
   }
