@@ -82,6 +82,9 @@ h1, h2, h3, h4, h5, h6, .typing {
   #about-header {
     text-align: center;
     padding: 1rem; }
+    #about-header h3 {
+      border-bottom: 3px solid steelblue;
+      width: fit-content; }
     #about-header h3::after {
       font-family: "Font Awesome 5 Free";
       margin-left: 0.25rem;
