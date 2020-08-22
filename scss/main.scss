@@ -126,6 +126,7 @@ h1, h2, h3, h4, h5, h6, .typing {
     background-color: $dark-shade-see-through;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
     margin: 35vh auto;
     padding: 1rem;
     border-radius: 1rem;
@@ -150,6 +151,12 @@ h1, h2, h3, h4, h5, h6, .typing {
     max-width: 400px;
     max-height: 250px;
     padding: 1rem;
+  }
+  .card {
+    text-align: center;
+    .card-info {
+      text-align: center;
+    }
   }
 }
 
