@@ -154,8 +154,22 @@ h1, h2, h3, h4, h5, h6, .typing {
   }
   .card {
     text-align: center;
-    .card-info {
+    &-info {
       text-align: center;
+    }
+  }
+
+  #project-1, #project-2 {
+    background-color: $dark-shade-see-through;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 35vh auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 65vw;
+    max-width: 900px;
+    iframe {
+      margin: 1rem 1.25rem;
     }
   }
 }
