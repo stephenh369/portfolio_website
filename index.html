@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" id="index">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Russo+One&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/dea9ed43f3.js" crossorigin="anonymous"></script>
+  <title>Stephen Herd | Software Developer</title>
+</head>
+<body>
+
+  <header id="main-header">
+    <nav id="main-nav">
+      <ul>
+        <i class="fas fa-directions"></i>
+        <li><a href="#index">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="showcase">
+      <div class="text">
+        <h1>My name is Stephen and I like to 
+          <span class="typing"></span>
+          <span class="cursor"></span>
+          <span class="solidCursor"></span>
+        </h1>
+      </div>
+      <script src="./typewriter.js"></script>
+      <h3>I am a software developer, I make computer go beep bop boop.</h3>
+      <div id="showcase-gif-div">
+        <iframe src="https://giphy.com/embed/ule4vhcY1xEKQ" width="350px" height="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+      </div>
+      <div class="btn-div">
+        <a href="#projects" class="btn-showcase">View My Projects</a>
+      </div>
+    </section>
+  </header>
+
+  <section id="about">
+    <div id="about-images">
+      <img src="./images/profile_photo1.jpg" alt="profile image">
+      <img src="./images/laptop.jpg" alt="laptop image">
+      <img src="./images/code.jpg" alt="code image">
+      <img src="./images/codeclan.png" alt="codeclan image">
+    </div>
+    <div id="about-div">
+      <div id="about-header"><h3>About Me</h3></div>
+      <div id="about-p-div">
+      <p><em>Hello there.</em> <br> <br>
+        I'm Stephen, and I am a software developer who has taken quite an unconventional path to get to where I am today. 
+        It has been quite the journey...
+      </p>
+      <br><br>
+      <p>I originally studied music, but after realising that ultimately it wasn't for me as a career path, the search for a new passion began.
+        <br><br>
+        A lot of my family were (or have) worked in the transport industry, and I'm also very enthusiastic about driving, so I thought "Why not do that for a living?". 
+        <br><br>
+        So for a while I became a bus driver.
+        <br>
+      </p>
+      <br>
+      <p>Then after having drove the local buses for a couple of years I decided to take that to the next level and also become a tour guide.
+        Driving into the Scottish Highlands talking non-sense about historical figures, monsters that don't exist (probably) and Scottish culture was an experience I certainly do not regret. 
+        However after a while I was starting to think about finding a more scalable career.
+        <br><br>
+        But then the global pandemic of 2020 struck.
+        <br><br>
+      </p>
+      <p>After being left without work and unsure about my future, I had a lot of time to think about what I really wanted to do. 
+        Regardless of how difficult or lengthy the journey would be, as time was no obstacle. <br><br>
+        I remembered back to when I was a kid. When I made the decision to pursue music, there was another option, the path not taken.
+        I always liked the idea of being a programmer. I originally got my first experience with coding through Scratch at high school, and remembered finding it really intriguing.
+        I unfortunately had fallen into the mindset back then that programming was only for very logical and mathematical individuals where as I wanted to pursue my creative hobbies.
+        <br><br>
+        So out of curiousity I boot up my PC one morning and find a beginners course on Python.
+        <br><br>
+        I was hooked.
+        <br><br>
+      </p>
+      <p> It was from this moment on that I dedicated myself to studying programming every day. 
+        After a few months of self study I began my journey through CodeClan, Scotland's only coding bootcamp as of 2020.
+        <br><br>
+        As of October 2020, I am now a fully qualified software developer, all within just a year, A rollercoaster of a year.
+      </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div id="projects-header">
+      <h3>My Projects</h3>
+      <div class="card">
+        <img class="thumbnail" src="images/dobble_board.png" alt="thumbnail">
+        <div class="card-info">
+          <h4>Dobble</h6>
+          <p>A browser game implementation of the Dobble card game (Spot It! in the US). 
+            Front-end built with Vue. Back-end is using Express.js and MongoDB for data persistence.
+          </p>
+          <a class="btn-primary" href="#project-1">See More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="thumbnail" src="images/the_engine_room.png" alt="thumbnail">
+        <div class="card-info">
+          <h4>The Engine Room</h6>
+          <p>The Engine Room is a car showroom inventory app designed using Ruby, Sinatra and PostgreSQL.</p>
+          <a class="btn-primary" href="#project-2">See More</a>
+        </div>
+      </div>
+      <div class="card">
+        <!-- <img class="thumbnail" src="images/#" alt="untitled"> -->
+        <div class="card-info">
+          <h4>Project 3</h6>
+          <p>Coming soon...</p>
+          <!-- <a class="btn-primary" href="#">See More</a> -->
+        </div>
+      </div>
+    </div>
+
+
+    <div id="project-1">
+      <iframe 
+      src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6701232299821871104?compact=1" 
+      height="380" width="504" frameborder="0" allowfullscreen="" title="Embedded LinkedIn post">
+      </iframe>
+      <div id="project-1-p-div">
+        <h3>Dobble</h3>
+        <p>
+          Dobble (also known as Spot It!) is a popular family card game. <br><br>
+          For this project, the aim was to make a browser adaption of the game as part of a small Agile team.<br><br> This is the result. <br><br>
+          We undertook this project with a deadline of 1 week to use for our JavaScript group projects for our studies at CodeClan. As well as JavaScript the project also makes use of Vue, Express and MongoDB.
+          <br><br>Credit also goes to:<br> @T-Nawrocki <br><a href="https://github.com/T-Nawrocki" target="_blank">(https://github.com/T-Nawrocki)</a> <br><br>@helenakolberg <br><a href="https://github.com/helenakolberg" target="_blank">(https://github.com/helenakolberg)</a> <br><br>@rud-y <br><a href="https://github.com/rud-y" target="_blank">(https://github.com/rud-y)</a>
+        </p>
+        <a href="#projects" class="btn-primary">Back To Projects</a>
+      </div>
+    </div>
+
+    <div id="project-2">
+      <iframe 
+      src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6692434672162521088?compact=1" 
+      height="284" width="504" frameborder="0" allowfullscreen="" title="Embedded LinkedIn post">
+      </iframe>
+      <div id="project-2-p-div">
+        <h3>The Engine Room</h3>
+        <p>
+          The Engine Room is a car showroom inventory CRUD app that would in theory be used by staff/management at a car showroom/dealership.<br><br>
+          I undertook this project with a deadline of 1 week to use as my Ruby project for my studies at CodeClan. The tech stack consists of mainly Ruby, Sinatra and PostgreSQL.
+        </p>
+        <a href="#projects" class="btn-primary">Back To Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div id="contact-div">
+      <a href="mailto: stephen_h369@live.co.uk" id="email-link">Email: stephen_h369@live.co.uk</a>
+      <a href="https://www.linkedin.com/in/stephen-herd/" target="_blank"><img src="images/linkedin.png"></a>
+      <a href="https://github.com/stephenh369" target="_blank"><img src="images/github.png"></a>
+    </div>
+  </section>
+
+</body>
+</html>
