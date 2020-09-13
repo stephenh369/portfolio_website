@@ -129,6 +129,7 @@ h1, h2, h3, h4, h5, h6, .typing {
 #projects #project-1, #projects #project-2 {
   background-color: rgba(51, 51, 51, 0.6);
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(2, 1fr);
   margin: 35vh auto;
   padding: 1rem;
