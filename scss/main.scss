@@ -161,6 +161,8 @@ h1, h2, h3, h4, h5, h6, .typing {
     text-align: center;
     &-info {
       text-align: center;
+      max-width: 75%;
+      margin: 0 auto;
     }
   }
 
@@ -236,6 +238,16 @@ h1, h2, h3, h4, h5, h6, .typing {
     &:hover {
       opacity: 0.75;
     }
+  }
+  &-github {
+    @extend %btn-shared;
+    margin-top: 1rem;
+    background-color: $light-color;
+    color: set-text-color($light-color);
+    &:hover {
+      opacity: 0.75;
+    }
+    
   }
 }
 
