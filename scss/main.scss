@@ -31,7 +31,8 @@ h1, h2, h3, h4, h5, h6, .typing {
   transform: translateY(-50%);
   right: 0;
   height: 100%;
-  width: 10vw;
+  width: 10%;
+  box-shadow: 2px 0px 10px $dark-color inset;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,13 +67,15 @@ h1, h2, h3, h4, h5, h6, .typing {
 #showcase {
   margin: 35vh auto;
   height: 100vh;
-  width: 75%;
+  width: 90%;
   transform: translateY(-25%);
   .text {
-    margin: 5vh auto;
+    margin: 5vh;
+    text-align: left;
   }
-  h3 {
+  h2, h3 {
     text-align: center;
+    margin: 2rem;
   }
   &-gif-div {
     margin-top: 1rem;
@@ -89,38 +92,43 @@ h1, h2, h3, h4, h5, h6, .typing {
 
 // ABOUT SECTION
 #about {
-  background-color: $dark-shade-see-through;
+  background-color: $primary-color;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 35vh auto;
   margin-top: 20vh;
   padding: 1rem;
-  border-radius: 1rem;
-  width: 75vw;
-  max-width: 1000px;
+  width: 90%;
+  // max-width: 1000px;
   align-items: center;
+  &-images {
+    text-align: center;
+  }
   img {
     width: 25%;
     height: 25%;
     min-width: 400px;
     max-height: 450px;
-    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid black;
+    border-radius: 10px;
   }
   &-header {
     text-align: center;
     padding: 1rem;
-    h3 {
-      border-bottom: 3px solid $primary-color;
+    h1 {
+      border-bottom: 3px solid $tertiary-color;
       width: fit-content;
     }
-    h3::after {
+    h1::after {
       font-family: "Font Awesome 5 Free";
       margin-left: 0.25rem;
       content: ' ';
     }
   }
   &-p-div {
+    background-color: $dark-shade-see-through;
     padding: 1rem;
+    border-radius: 5px;
   }
 }
 
@@ -128,22 +136,21 @@ h1, h2, h3, h4, h5, h6, .typing {
 //PROJECTS SECTION
 #projects {
   &-header {
-    background-color: $dark-shade-see-through;
+    background-color: $tertiary-color;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
-    margin: 40vh auto;
+    margin-bottom: 25vh 0;
     padding: 1rem;
-    border-radius: 1rem;
-    width: 75vw;
-    max-width: 1200px;
-    h3 {
+    width: 90%;
+    // max-width: 1200px;
+    h1 {
       width: fit-content;
       justify-self: center;
       align-self: center;
       border-bottom: 3px solid $primary-color;
     }
-    h3::after {
+    h1::after {
       font-family: "Font Awesome 5 Free";
       margin-left: 0.25rem;
       content: ' ';
@@ -155,15 +162,20 @@ h1, h2, h3, h4, h5, h6, .typing {
     min-width: 250px;
     max-width: 400px;
     max-height: 250px;
-    padding: 1rem;
+    padding: 2rem 1rem;
   }
   .card {
+    background: $dark-shade-see-through;
     text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    align-self: flex-end;
     &-info {
       text-align: center;
-      max-width: 75%;
+      width: 75%;
       margin: 0 auto;
     }
+
   }
 
   #project-1, #project-2, #project-3 {
@@ -174,8 +186,8 @@ h1, h2, h3, h4, h5, h6, .typing {
     margin: 35vh auto;
     padding: 1rem;
     border-radius: 1rem;
-    width: 65vw;
-    max-width: 900px;
+    width: 65%;
+    // max-width: 900px;
     iframe {
       margin: 1rem 1.25rem;
     }
