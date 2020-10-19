@@ -3,26 +3,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 body {
-  background-color: #3a4b55;
+  background-color: #12232E;
   color: #f4f4f4; }
 
 h1, h2, h3, h4, h5, h6, .typing {
-  font-family: "Russo One", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 #index, #about, #projects, #contact {
   scroll-behavior: smooth; }
 
 #main-nav {
-  background: cadetblue;
+  background: #3881a8;
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
   right: 0;
   height: 100%;
-  width: 10vw;
+  width: 10%;
+  box-shadow: 2px 0px 10px #12232E inset;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -43,18 +44,20 @@ h1, h2, h3, h4, h5, h6, .typing {
     padding-bottom: 0.5rem;
     transition: border-color 0.25s; }
     #main-nav a:hover {
-      border-color: rgba(64, 117, 160, 0.9);
+      border-color: #4DA8DA;
       font-weight: 700; }
 
 #showcase {
   margin: 35vh auto;
   height: 100vh;
-  width: 75%;
+  width: 90%;
   transform: translateY(-25%); }
   #showcase .text {
-    margin: 5vh auto; }
-  #showcase h3 {
-    text-align: center; }
+    margin: 5vh;
+    text-align: left; }
+  #showcase h2, #showcase h3 {
+    text-align: center;
+    margin: 2rem; }
   #showcase-gif-div {
     margin-top: 1rem;
     display: flex;
@@ -65,51 +68,52 @@ h1, h2, h3, h4, h5, h6, .typing {
     justify-content: center; }
 
 #about {
-  background-color: rgba(51, 51, 51, 0.6);
+  background-color: #136ca3;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 35vh auto;
   margin-top: 20vh;
   padding: 1rem;
-  border-radius: 1rem;
-  width: 75vw;
-  max-width: 1000px;
+  width: 90%;
   align-items: center; }
+  #about-images {
+    text-align: center; }
   #about img {
     width: 25%;
     height: 25%;
     min-width: 400px;
     max-height: 450px;
-    padding: 1rem; }
+    margin: 1rem;
+    border: 2px solid black;
+    border-radius: 10px; }
   #about-header {
     text-align: center;
     padding: 1rem; }
-    #about-header h3 {
-      border-bottom: 3px solid steelblue;
+    #about-header h1 {
+      border-bottom: 3px solid #161748;
       width: fit-content; }
-    #about-header h3::after {
+    #about-header h1::after {
       font-family: "Font Awesome 5 Free";
       margin-left: 0.25rem;
       content: ' '; }
   #about-p-div {
-    padding: 1rem; }
+    background-color: rgba(51, 51, 51, 0.6);
+    padding: 1rem;
+    border-radius: 5px; }
 
 #projects-header {
-  background-color: rgba(51, 51, 51, 0.6);
+  background-color: #161748;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
-  margin: 40vh auto;
+  margin-bottom: 25vh 0;
   padding: 1rem;
-  border-radius: 1rem;
-  width: 75vw;
-  max-width: 1200px; }
-  #projects-header h3 {
+  width: 90%; }
+  #projects-header h1 {
     width: fit-content;
     justify-self: center;
     align-self: center;
-    border-bottom: 3px solid steelblue; }
-  #projects-header h3::after {
+    border-bottom: 3px solid #136ca3; }
+  #projects-header h1::after {
     font-family: "Font Awesome 5 Free";
     margin-left: 0.25rem;
     content: ' '; }
@@ -120,13 +124,17 @@ h1, h2, h3, h4, h5, h6, .typing {
   min-width: 250px;
   max-width: 400px;
   max-height: 250px;
-  padding: 1rem; }
+  padding: 2rem 1rem; }
 
 #projects .card {
-  text-align: center; }
+  background: rgba(51, 51, 51, 0.6);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  align-self: flex-end; }
   #projects .card-info {
     text-align: center;
-    max-width: 75%;
+    width: 75%;
     margin: 0 auto; }
 
 #projects #project-1, #projects #project-2, #projects #project-3 {
@@ -137,8 +145,7 @@ h1, h2, h3, h4, h5, h6, .typing {
   margin: 35vh auto;
   padding: 1rem;
   border-radius: 1rem;
-  width: 65vw;
-  max-width: 900px; }
+  width: 65%; }
   #projects #project-1 iframe, #projects #project-2 iframe, #projects #project-3 iframe {
     margin: 1rem 1.25rem; }
 
@@ -161,7 +168,7 @@ h1, h2, h3, h4, h5, h6, .typing {
     padding: 0.8rem 2rem;
     margin: 0 2vw;
     border-radius: 7px;
-    background: steelblue;
+    background: #136ca3;
     color: #f4f4f4; }
 
 .btn-showcase, .btn-primary, .btn-github {
@@ -174,7 +181,7 @@ h1, h2, h3, h4, h5, h6, .typing {
 
 .btn-showcase {
   margin-top: 1rem;
-  background-color: steelblue;
+  background-color: #136ca3;
   color: #f4f4f4; }
   .btn-showcase:hover {
     padding: 1.5rem 2.5rem;
@@ -182,7 +189,7 @@ h1, h2, h3, h4, h5, h6, .typing {
 
 .btn-primary {
   margin-top: 1rem;
-  background-color: steelblue;
+  background-color: #136ca3;
   color: #f4f4f4; }
   .btn-primary:hover {
     opacity: 0.75; }
@@ -190,7 +197,7 @@ h1, h2, h3, h4, h5, h6, .typing {
 .btn-github {
   margin-top: 1rem;
   background-color: #f4f4f4;
-  color: #3a4b55; }
+  color: #12232E; }
   .btn-github:hover {
     opacity: 0.75; }
 
@@ -199,7 +206,7 @@ h1, h2, h3, h4, h5, h6, .typing {
   justify-content: center;
   font-size: 1.4rem; }
   .text .typing {
-    color: rgba(64, 117, 160, 0.9); }
+    color: #4DA8DA; }
 
 .cursor {
   position: relative; }
@@ -208,7 +215,7 @@ h1, h2, h3, h4, h5, h6, .typing {
     position: absolute;
     width: 1px;
     height: 100%;
-    border-right: 2px solid steelblue;
+    border-right: 2px solid #136ca3;
     animation: blink 0.5s infinite ease-in-out; }
 
 @keyframes blink {
@@ -230,4 +237,4 @@ h1, h2, h3, h4, h5, h6, .typing {
     position: absolute;
     width: 1px;
     height: 100%;
-    border-right: 2px solid steelblue; }
+    border-right: 2px solid #136ca3; }
