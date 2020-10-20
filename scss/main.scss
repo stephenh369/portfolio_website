@@ -36,6 +36,7 @@ h1, h2, h3, h4, h5, h6, .typing {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
   
   ul {
     display: flex;
@@ -69,6 +70,7 @@ h1, h2, h3, h4, h5, h6, .typing {
   height: 100vh;
   width: 90%;
   transform: translateY(-25%);
+  z-index: 0;
   .text {
     margin: 5vh;
     text-align: left;
@@ -78,7 +80,9 @@ h1, h2, h3, h4, h5, h6, .typing {
     margin: 2rem;
   }
   &-gif-div {
+    margin: 0 auto;
     margin-top: 1rem;
+    width: 50%;
     display: flex;
     justify-content: center;
     height: 35vh;
@@ -109,8 +113,9 @@ h1, h2, h3, h4, h5, h6, .typing {
     min-width: 400px;
     max-height: 450px;
     margin: 1rem;
-    border: 2px solid black;
+    border: 2px solid $tertiary-color;
     border-radius: 10px;
+    box-shadow: 0px 0px 5px 2px $tertiary-color;
   }
   &-header {
     text-align: center;
@@ -168,7 +173,9 @@ h1, h2, h3, h4, h5, h6, .typing {
     background: $dark-shade-see-through;
     text-align: center;
     padding: 1rem;
+    border: 2px solid $primary-color;
     border-radius: 10px;
+    box-shadow: 0px 0px 5px 2px $primary-color inset;
     align-self: flex-end;
     &-info {
       text-align: center;
@@ -178,18 +185,52 @@ h1, h2, h3, h4, h5, h6, .typing {
 
   }
 
+  #project-1 {
+    background-color: $project-1-color;
+    color: set-text-color($project-1-color);
+  }
+
+  #project-2 {
+    background-color: $project-2-color;
+    color: set-text-color($project-2-color);
+  }
+
+  #project-3 {
+    background-color: $project-3-color;
+    color: set-text-color($project-3-color);
+  }
+
   #project-1, #project-2, #project-3 {
-    background-color: $dark-shade-see-through;
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
-    margin: 35vh auto;
+    // margin: 0 auto;
     padding: 1rem;
-    border-radius: 1rem;
-    width: 65%;
+    width: 90%;
+    height: 100vh;
     // max-width: 900px;
+
+    &-p-div {
+      border-radius: 10px;
+      border: 2px solid $dark-color;
+      padding: 1rem;
+      box-shadow: 0px 0px 5px 2px $dark-shade-see-through inset;
+    }
+
     iframe {
+      width: 90%;
+      height: 55%;
+      border: 2px solid $dark-color;
+      border-radius: 10px;
       margin: 1rem 1.25rem;
+    }
+
+    .btn-div {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      .btn-github, .btn-primary {
+        width: 75%;
+      }
     }
   }
 }
@@ -202,8 +243,8 @@ h1, h2, h3, h4, h5, h6, .typing {
     justify-content: center;
     align-items: center;
     align-content: center;
-    background: $dark-shade-see-through;
-    color: set-text-color($dark-shade-see-through);
+    background: $dark-color;
+    color: set-text-color($dark-color);
     img {
       width: 50px;
       height: 50px;
@@ -230,6 +271,7 @@ h1, h2, h3, h4, h5, h6, .typing {
   border-radius: 7px;
   cursor: pointer;
   text-decoration: none;
+  text-align: center;
 }
 .btn {
   &-showcase {

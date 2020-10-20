@@ -26,7 +26,8 @@ h1, h2, h3, h4, h5, h6, .typing {
   box-shadow: 2px 0px 10px #12232E inset;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  z-index: 10; }
   #main-nav ul {
     display: flex;
     flex-direction: column;
@@ -51,7 +52,8 @@ h1, h2, h3, h4, h5, h6, .typing {
   margin: 35vh auto;
   height: 100vh;
   width: 90%;
-  transform: translateY(-25%); }
+  transform: translateY(-25%);
+  z-index: 0; }
   #showcase .text {
     margin: 5vh;
     text-align: left; }
@@ -59,7 +61,9 @@ h1, h2, h3, h4, h5, h6, .typing {
     text-align: center;
     margin: 2rem; }
   #showcase-gif-div {
+    margin: 0 auto;
     margin-top: 1rem;
+    width: 50%;
     display: flex;
     justify-content: center;
     height: 35vh; }
@@ -83,8 +87,9 @@ h1, h2, h3, h4, h5, h6, .typing {
     min-width: 400px;
     max-height: 450px;
     margin: 1rem;
-    border: 2px solid black;
-    border-radius: 10px; }
+    border: 2px solid #161748;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 2px #161748; }
   #about-header {
     text-align: center;
     padding: 1rem; }
@@ -130,24 +135,50 @@ h1, h2, h3, h4, h5, h6, .typing {
   background: rgba(51, 51, 51, 0.6);
   text-align: center;
   padding: 1rem;
+  border: 2px solid #136ca3;
   border-radius: 10px;
+  box-shadow: 0px 0px 5px 2px #136ca3 inset;
   align-self: flex-end; }
   #projects .card-info {
     text-align: center;
     width: 75%;
     margin: 0 auto; }
 
+#projects #project-1 {
+  background-color: #61DBFB;
+  color: #12232E; }
+
+#projects #project-2 {
+  background-color: #8d538d;
+  color: #f4f4f4; }
+
+#projects #project-3 {
+  background-color: #820C02;
+  color: #f4f4f4; }
+
 #projects #project-1, #projects #project-2, #projects #project-3 {
-  background-color: rgba(51, 51, 51, 0.6);
   display: grid;
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
-  margin: 35vh auto;
   padding: 1rem;
-  border-radius: 1rem;
-  width: 65%; }
+  width: 90%;
+  height: 100vh; }
+  #projects #project-1-p-div, #projects #project-2-p-div, #projects #project-3-p-div {
+    border-radius: 10px;
+    border: 2px solid #12232E;
+    padding: 1rem;
+    box-shadow: 0px 0px 5px 2px rgba(51, 51, 51, 0.6) inset; }
   #projects #project-1 iframe, #projects #project-2 iframe, #projects #project-3 iframe {
+    width: 90%;
+    height: 55%;
+    border: 2px solid #12232E;
+    border-radius: 10px;
     margin: 1rem 1.25rem; }
+  #projects #project-1 .btn-div, #projects #project-2 .btn-div, #projects #project-3 .btn-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    #projects #project-1 .btn-div .btn-github, #projects #project-1 .btn-div .btn-primary, #projects #project-2 .btn-div .btn-github, #projects #project-2 .btn-div .btn-primary, #projects #project-3 .btn-div .btn-github, #projects #project-3 .btn-div .btn-primary {
+      width: 75%; }
 
 #contact-div {
   display: flex;
@@ -155,7 +186,7 @@ h1, h2, h3, h4, h5, h6, .typing {
   justify-content: center;
   align-items: center;
   align-content: center;
-  background: rgba(51, 51, 51, 0.6);
+  background: #12232E;
   color: #f4f4f4; }
   #contact-div img {
     width: 50px;
@@ -177,7 +208,8 @@ h1, h2, h3, h4, h5, h6, .typing {
   transition: all 0.25s;
   border-radius: 7px;
   cursor: pointer;
-  text-decoration: none; }
+  text-decoration: none;
+  text-align: center; }
 
 .btn-showcase {
   margin-top: 1rem;
