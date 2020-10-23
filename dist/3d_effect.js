@@ -1,5 +1,6 @@
 const cards = document.querySelectorAll(".card");
 
+
 // Moving Event
 cards.forEach((card) => card.addEventListener("mousemove", (e) => {
   let xAxis = (window.innerWidth / 2 - e.pageX) / 100;
@@ -14,6 +15,7 @@ cards.forEach((card) => card.addEventListener("mouseenter", (e) => {
   let info = card.querySelector(".card-info");
   info.style.transform = "translateZ(75px)"; info.style.transition = "all 0.75s ease-out";
 }));
+
 //Animate Out
 cards.forEach((card) => card.addEventListener("mouseleave", (e) => {
   card.style.transition = "all 0.5s ease";

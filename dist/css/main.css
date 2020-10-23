@@ -31,7 +31,8 @@ h1, h2, h3, h4, h5, h6, .typing {
   #main-nav ul {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    text-align: center; }
     #main-nav ul i {
       margin-bottom: 1rem;
       font-size: 1.75rem; }
@@ -47,6 +48,17 @@ h1, h2, h3, h4, h5, h6, .typing {
     #main-nav a:hover {
       border-color: #4DA8DA;
       font-weight: 700; }
+  #main-nav .nav-links-projects {
+    font-size: smaller; }
+    #main-nav .nav-links-projects a:hover {
+      border-color: transparent;
+      font-weight: 700; }
+    #main-nav .nav-links-projects #project-1-nav-link {
+      color: #61DBFB; }
+    #main-nav .nav-links-projects #project-2-nav-link {
+      color: #8d538d; }
+    #main-nav .nav-links-projects #project-3-nav-link {
+      color: #820C02; }
 
 #showcase {
   margin: 35vh auto;
