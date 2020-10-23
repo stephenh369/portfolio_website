@@ -106,6 +106,7 @@ h1, h2, h3, h4, h5, h6, .typing {
     border-radius: 5px; }
 
 #projects-header {
+  perspective: 1000px;
   background-color: #161748;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -138,7 +139,8 @@ h1, h2, h3, h4, h5, h6, .typing {
   border: 2px solid #136ca3;
   border-radius: 10px;
   box-shadow: 0px 0px 5px 2px #136ca3 inset;
-  align-self: flex-end; }
+  align-self: flex-end;
+  transform-style: preserve-3d; }
   #projects .card-info {
     text-align: center;
     width: 75%;
