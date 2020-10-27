@@ -37,8 +37,15 @@ h1, h2, h3, h4, h5, h6, .typing {
   align-items: center;
   justify-content: center;
   z-index: 10;
+
+  &-hamburger {
+    display: none;
+    background: transparent;
+    color: set-text-color($alt-color);
+    border: none;
+  }
   
-  ul {
+  &-ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,6 +89,42 @@ h1, h2, h3, h4, h5, h6, .typing {
     }
   }
 
+  @media (max-width: 800px) {
+
+    &-hamburger {
+      display: block;
+      font-size: 30px;
+      margin-left: 5px;
+    }
+
+    &-ul {
+      display: none;
+    }
+    
+    &-ul.show {
+      display: flex;
+      width: 100%;
+      animation: appear 0.75s;
+    }
+    @keyframes appear {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+}
+@media (max-width: 800px) {
+  #main-nav {
+    justify-content: left;
+  }
+  #main-nav.expand {
+    width: 90%;
+    background-color: #3881a8d7;
+  }
 }
 
 // SHOWCASE SECTION

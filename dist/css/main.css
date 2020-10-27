@@ -28,12 +28,17 @@ h1, h2, h3, h4, h5, h6, .typing {
   align-items: center;
   justify-content: center;
   z-index: 10; }
-  #main-nav ul {
+  #main-nav-hamburger {
+    display: none;
+    background: transparent;
+    color: #f4f4f4;
+    border: none; }
+  #main-nav-ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center; }
-    #main-nav ul i {
+    #main-nav-ul i {
       margin-bottom: 1rem;
       font-size: 1.75rem; }
   #main-nav li {
@@ -59,6 +64,29 @@ h1, h2, h3, h4, h5, h6, .typing {
       color: #8d538d; }
     #main-nav .nav-links-projects #project-3-nav-link {
       color: #820C02; }
+  @media (max-width: 800px) {
+    #main-nav-hamburger {
+      display: block;
+      font-size: 30px;
+      margin-left: 5px; }
+    #main-nav-ul {
+      display: none; }
+    #main-nav-ul.show {
+      display: flex;
+      width: 100%;
+      animation: appear 0.75s; }
+    @keyframes appear {
+      0% {
+        opacity: 0; }
+      100% {
+        opacity: 1; } } }
+
+@media (max-width: 800px) {
+  #main-nav {
+    justify-content: left; }
+  #main-nav.expand {
+    width: 90%;
+    background-color: #3881a8d7; } }
 
 #showcase {
   margin: 35vh auto;
