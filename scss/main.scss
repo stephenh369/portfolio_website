@@ -122,21 +122,28 @@ h1, h2, h3, h4, h5, h6, .typing {
     justify-content: left;
   }
   #main-nav.expand {
-    width: 90%;
+    width: 100%;
     background-color: #3881a8d7;
   }
 }
 
 // SHOWCASE SECTION
 #showcase {
-  margin: 35vh auto;
-  height: 100vh;
-  width: 90%;
-  transform: translateY(-25%);
+  margin: 50vh auto;
+  margin-top: 35vh;
+  height: 100%;
+  width: 80%;
+  // transform: translateY(-25%);
   z-index: 0;
+  position: relative;
   .text {
-    margin: 5vh;
+    position: absolute;
     text-align: left;
+    width: 75vw;
+    max-width: 75vw;
+    top: -25%;
+    left: 25%;
+    transform: translate(-25%, -30%);
   }
   h2, h3 {
     text-align: center;
@@ -154,6 +161,13 @@ h1, h2, h3, h4, h5, h6, .typing {
     display: flex;
     justify-content: center;
   }
+  @media (max-width: 768px) {
+    margin-top: 50vh;
+    .text {
+      top: -50%;
+    }
+  }
+  
 }
 
 
@@ -165,7 +179,6 @@ h1, h2, h3, h4, h5, h6, .typing {
   margin-top: 20vh;
   padding: 1rem;
   width: 90%;
-  // max-width: 1000px;
   align-items: center;
   &-images {
     text-align: center;
@@ -198,6 +211,11 @@ h1, h2, h3, h4, h5, h6, .typing {
     padding: 1rem;
     border-radius: 5px;
   }
+  @media (max-width: 768px) {
+    img {
+      display: none;
+    }
+  }
 }
 
 
@@ -212,7 +230,6 @@ h1, h2, h3, h4, h5, h6, .typing {
     margin-bottom: 25vh 0;
     padding: 1rem;
     width: 90%;
-    // max-width: 1200px;
     h1 {
       width: fit-content;
       justify-self: center;
@@ -223,6 +240,10 @@ h1, h2, h3, h4, h5, h6, .typing {
       font-family: "Font Awesome 5 Free";
       margin-left: 0.25rem;
       content: ' ';
+    }
+    @media (max-width:768px) {
+      grid-template-columns: 1fr;
+      max-width: 90vw;
     }
   }
   img {
