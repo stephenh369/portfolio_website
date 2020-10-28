@@ -28,12 +28,17 @@ h1, h2, h3, h4, h5, h6, .typing {
   align-items: center;
   justify-content: center;
   z-index: 10; }
-  #main-nav ul {
+  #main-nav-hamburger {
+    display: none;
+    background: transparent;
+    color: #f4f4f4;
+    border: none; }
+  #main-nav-ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center; }
-    #main-nav ul i {
+    #main-nav-ul i {
       margin-bottom: 1rem;
       font-size: 1.75rem; }
   #main-nav li {
@@ -59,16 +64,45 @@ h1, h2, h3, h4, h5, h6, .typing {
       color: #8d538d; }
     #main-nav .nav-links-projects #project-3-nav-link {
       color: #820C02; }
+  @media (max-width: 800px) {
+    #main-nav-hamburger {
+      display: block;
+      font-size: 30px;
+      margin-left: 5px; }
+    #main-nav-ul {
+      display: none; }
+    #main-nav-ul.show {
+      display: flex;
+      width: 100%;
+      animation: appear 0.75s; }
+    @keyframes appear {
+      0% {
+        opacity: 0; }
+      100% {
+        opacity: 1; } } }
+
+@media (max-width: 800px) {
+  #main-nav {
+    justify-content: left; }
+  #main-nav.expand {
+    width: 100%;
+    background-color: #3881a8d7; } }
 
 #showcase {
-  margin: 35vh auto;
-  height: 100vh;
-  width: 90%;
-  transform: translateY(-25%);
-  z-index: 0; }
+  margin: 50vh auto;
+  margin-top: 35vh;
+  height: 100%;
+  width: 80%;
+  z-index: 0;
+  position: relative; }
   #showcase .text {
-    margin: 5vh;
-    text-align: left; }
+    position: absolute;
+    text-align: left;
+    width: 75vw;
+    max-width: 75vw;
+    top: -25%;
+    left: 25%;
+    transform: translate(-25%, -30%); }
   #showcase h2, #showcase h3 {
     text-align: center;
     margin: 2rem; }
@@ -82,6 +116,14 @@ h1, h2, h3, h4, h5, h6, .typing {
   #showcase .btn-div {
     display: flex;
     justify-content: center; }
+  @media (max-width: 1024px) {
+    #showcase {
+      margin-left: 1.2rem; } }
+  @media (max-width: 768px) {
+    #showcase {
+      margin-top: 50vh; }
+      #showcase .text {
+        top: -50%; } }
 
 #about {
   background-color: #136ca3;
@@ -116,6 +158,13 @@ h1, h2, h3, h4, h5, h6, .typing {
     background-color: rgba(51, 51, 51, 0.6);
     padding: 1rem;
     border-radius: 5px; }
+  @media (max-width: 768px) {
+    #about {
+      grid-template-columns: 1fr;
+      width: 100%;
+      padding-right: 15%; }
+      #about img {
+        display: none; } }
 
 #projects-header {
   perspective: 1000px;
@@ -135,6 +184,11 @@ h1, h2, h3, h4, h5, h6, .typing {
     font-family: "Font Awesome 5 Free";
     margin-left: 0.25rem;
     content: ' '; }
+  @media (max-width: 768px) {
+    #projects-header {
+      grid-template-columns: 1fr;
+      width: 100%;
+      padding-right: 15%; } }
 
 #projects img {
   width: 100%;
@@ -184,7 +238,9 @@ h1, h2, h3, h4, h5, h6, .typing {
     box-shadow: 0px 0px 5px 2px rgba(51, 51, 51, 0.6) inset; }
   #projects #project-1 iframe, #projects #project-2 iframe, #projects #project-3 iframe {
     width: 90%;
-    height: 55%;
+    max-width: 720px;
+    height: 75%;
+    max-height: 500px;
     border: 2px solid #12232E;
     border-radius: 10px;
     margin: 1rem 1.25rem; }
@@ -193,28 +249,35 @@ h1, h2, h3, h4, h5, h6, .typing {
     grid-template-columns: repeat(3, 1fr); }
     #projects #project-1 .btn-div .btn-github, #projects #project-1 .btn-div .btn-primary, #projects #project-2 .btn-div .btn-github, #projects #project-2 .btn-div .btn-primary, #projects #project-3 .btn-div .btn-github, #projects #project-3 .btn-div .btn-primary {
       width: 75%; }
+  @media (max-width: 768px) {
+    #projects #project-1, #projects #project-2, #projects #project-3 {
+      grid-template-columns: 1fr;
+      height: 100%;
+      width: 100%;
+      padding-right: 15%; }
+      #projects #project-1 iframe, #projects #project-2 iframe, #projects #project-3 iframe {
+        display: none; }
+      #projects #project-1 .btn-div, #projects #project-2 .btn-div, #projects #project-3 .btn-div {
+        grid-template-columns: 1fr; } }
 
 #contact-div {
   display: flex;
   height: 15vh;
-  justify-content: center;
+  margin-right: 10%;
+  justify-content: space-evenly;
   align-items: center;
   align-content: center;
   background: #12232E;
   color: #f4f4f4; }
-  #contact-div img {
-    width: 50px;
-    height: 50px;
-    margin: 0 2.5vw;
-    background: white;
-    border-radius: 10px; }
+  #contact-div i {
+    font-size: 50px;
+    margin: 0 1rem; }
   #contact-div #email-link {
-    text-decoration: none;
-    padding: 0.8rem 2rem;
-    margin: 0 2vw;
-    border-radius: 7px;
-    background: #136ca3;
     color: #f4f4f4; }
+  #contact-div #linkedin-link {
+    color: #2867B2; }
+  #contact-div #github-link {
+    color: #111; }
 
 .btn-showcase, .btn-primary, .btn-github {
   display: inline-block;
