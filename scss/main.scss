@@ -161,6 +161,9 @@ h1, h2, h3, h4, h5, h6, .typing {
     display: flex;
     justify-content: center;
   }
+  @media (max-width: 1024px) {
+    margin-left: 1.2rem;
+  }
   @media (max-width: 768px) {
     margin-top: 50vh;
     .text {
@@ -212,6 +215,9 @@ h1, h2, h3, h4, h5, h6, .typing {
     border-radius: 5px;
   }
   @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding-right: 15%;
     img {
       display: none;
     }
@@ -243,7 +249,8 @@ h1, h2, h3, h4, h5, h6, .typing {
     }
     @media (max-width:768px) {
       grid-template-columns: 1fr;
-      max-width: 90vw;
+      width: 100%;
+      padding-right: 15%;
     }
   }
   img {
@@ -305,7 +312,9 @@ h1, h2, h3, h4, h5, h6, .typing {
 
     iframe {
       width: 90%;
-      height: 55%;
+      max-width: 720px;
+      height: 75%;
+      max-height: 500px;
       border: 2px solid $dark-color;
       border-radius: 10px;
       margin: 1rem 1.25rem;
@@ -318,6 +327,21 @@ h1, h2, h3, h4, h5, h6, .typing {
         width: 75%;
       }
     }
+
+    @media (max-width:768px) {
+      grid-template-columns: 1fr;
+      height: 100%;
+      width: 100%;
+      padding-right: 15%;
+
+      iframe {
+        display: none;
+      }
+
+      .btn-div {
+        grid-template-columns: 1fr;
+      }
+    }
   }
 }
 
@@ -326,26 +350,32 @@ h1, h2, h3, h4, h5, h6, .typing {
   &-div {
     display: flex;
     height: 15vh;
-    justify-content: center;
+    margin-right: 10%;
+    justify-content: space-evenly;
     align-items: center;
     align-content: center;
     background: $dark-color;
     color: set-text-color($dark-color);
-    img {
-      width: 50px;
-      height: 50px;
-      margin: 0 2.5vw;
-      background: white;
-      border-radius: 10px;
+    i {
+      font-size: 50px;
+      margin: 0 1rem;
     }
+
     #email-link {
-      text-decoration: none;
-      padding: 0.8rem 2rem;
-      margin: 0 2vw;
-      border-radius: 7px;
-      background: $primary-color;
       color: set-text-color($primary-color);
     }
+
+    #linkedin-link {
+      color: #2867B2;
+    }
+
+    #github-link {
+      color: #111;
+    }
+
+    // @media (max-width: 768px) {
+
+    // }
   }
 }
 
