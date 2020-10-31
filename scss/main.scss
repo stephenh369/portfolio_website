@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6, .typing {
   }
   h2, h3 {
     text-align: center;
-    margin: 2rem;
+    margin: 3rem;
   }
   &-gif-div {
     margin: 0 auto;
@@ -168,6 +168,10 @@ h1, h2, h3, h4, h5, h6, .typing {
     margin-top: 50vh;
     .text {
       top: -50%;
+    }
+    h2, h3 {
+      text-align: left;
+      margin-left: 1rem;
     }
   }
   
@@ -221,6 +225,15 @@ h1, h2, h3, h4, h5, h6, .typing {
     img {
       display: none;
     }
+    &-header {
+      
+      h1 {
+        
+      }
+      h1::after {
+        font-size: 32px;
+      }
+    }
   }
 }
 
@@ -241,6 +254,7 @@ h1, h2, h3, h4, h5, h6, .typing {
       justify-self: center;
       align-self: center;
       border-bottom: 3px solid $primary-color;
+      text-align: center;
     }
     h1::after {
       font-family: "Font Awesome 5 Free";
@@ -251,6 +265,9 @@ h1, h2, h3, h4, h5, h6, .typing {
       grid-template-columns: 1fr;
       width: 100%;
       padding-right: 15%;
+      h1::after {
+        font-size: 30px;
+      }
     }
   }
   img {
@@ -322,6 +339,7 @@ h1, h2, h3, h4, h5, h6, .typing {
 
     .btn-div {
       display: grid;
+      justify-items: center;
       grid-template-columns: repeat(3, 1fr);
       .btn-github, .btn-primary {
         width: 75%;
@@ -335,7 +353,7 @@ h1, h2, h3, h4, h5, h6, .typing {
       padding-right: 15%;
 
       iframe {
-        display: none;
+        height: 35vh;
       }
 
       .btn-div {
