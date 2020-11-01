@@ -244,7 +244,7 @@ h1, h2, h3, h4, h5, h6, .typing {
     border: 2px solid #12232E;
     padding: 1rem;
     box-shadow: 0px 0px 5px 2px rgba(51, 51, 51, 0.6) inset; }
-  #projects #project-1 iframe, #projects #project-2 iframe, #projects #project-3 iframe {
+  #projects #project-1 iframe, #projects #project-1 video, #projects #project-2 iframe, #projects #project-2 video, #projects #project-3 iframe, #projects #project-3 video {
     width: 90%;
     max-width: 720px;
     height: 75%;
@@ -264,7 +264,7 @@ h1, h2, h3, h4, h5, h6, .typing {
       height: 100%;
       width: 100%;
       padding-right: 15%; }
-      #projects #project-1 iframe, #projects #project-2 iframe, #projects #project-3 iframe {
+      #projects #project-1 iframe, #projects #project-1 video, #projects #project-2 iframe, #projects #project-2 video, #projects #project-3 iframe, #projects #project-3 video {
         height: 35vh; }
       #projects #project-1 .btn-div, #projects #project-2 .btn-div, #projects #project-3 .btn-div {
         grid-template-columns: 1fr; } }
