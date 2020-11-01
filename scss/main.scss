@@ -227,9 +227,9 @@ h1, h2, h3, h4, h5, h6, .typing {
     }
     &-header {
       
-      h1 {
+      // h1 {
         
-      }
+      // }
       h1::after {
         font-size: 32px;
       }
@@ -327,7 +327,7 @@ h1, h2, h3, h4, h5, h6, .typing {
       box-shadow: 0px 0px 5px 2px $dark-shade-see-through inset;
     }
 
-    iframe {
+    iframe, video {
       width: 90%;
       max-width: 720px;
       height: 75%;
@@ -352,7 +352,7 @@ h1, h2, h3, h4, h5, h6, .typing {
       width: 100%;
       padding-right: 15%;
 
-      iframe {
+      iframe, video {
         height: 35vh;
       }
 
